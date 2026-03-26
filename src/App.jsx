@@ -1,12 +1,12 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import RootLayout from "./layouts/RootLayout";
+import RootLayout from "./layouts/RootLayout.jsx";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
-const AllAppsPage = lazy(() => import("./pages/AllAppsPage"));
-const AppDetailsPage = lazy(() => import("./pages/AppDetailsPage"));
-const InstallationPage = lazy(() => import("./pages/InstallationPage"));
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+const HomePage = lazy(() => import("./pages/HomePage.jsx"));
+const AllAppsPage = lazy(() => import("./pages/AllAppsPage.jsx"));
+const AppDetailsPage = lazy(() => import("./pages/AppDetailsPage.jsx"));
+const InstallationPage = lazy(() => import("./pages/InstallationPage.jsx"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
 
 function App() {
   return (
